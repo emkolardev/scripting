@@ -1,0 +1,146 @@
+/*=================
+FONTS
+=================*/
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+}
+
+.wrapper {
+	max-width: 100%;
+	margin-top: 20px;
+}
+
+.headerInfo {
+	width: auto;
+	margin: 0 auto;
+}
+
+figure img {
+	max-width: 100%;
+}
+
+.headshot {
+	width: 200px;
+	margin: 0 auto;
+}
+
+.circleImg {
+	border-radius: 50%;
+	border: 2px solid rgb(100,100,100);
+	opacity: 0.5;
+}
+
+.name {
+	text-align: center;
+	margin-top: -20px;
+}
+
+.name h1 {
+	font-size: 22px;
+	color: rgb(0,148,148);
+	font-weight: 400;
+}
+
+.name h2 {
+	font-size: 18px;
+	margin-top: -20px;
+	color: rgb(100,100,100);
+	font-weight: 300;
+}
+
+.resume {
+	width: 90%;
+	margin: 40px auto;
+}
+
+section {
+	background-color: white;
+	color: rgb(100,100,100);
+}
+
+section h3 {
+	font-size: 22px;
+}
+
+/*.plus {
+	float: left;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background-image: url("plus.jpg");
+	margin: 7px 0px 0px 95px;
+	cursor: pointer;
+}
+
+.minus {
+	float: left;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background-image: url("minus.jpg");
+	margin: 7px 0px 0px 95px;
+	cursor: pointer;
+}*/
+
+/*.slide {
+	visibility: hidden;
+}
+
+.open {
+	margin-top: 0px;
+}
+
+.openSlide {
+	visibility: visible;
+}
+
+.plus:hover {
+	width: 17px;
+	height: 17px;
+	border: 1px solid rgb(0,148,148);
+	border-radius: 50%;
+}
+
+.education {
+	margin-top: -50px;
+}
+
+.edPlus {
+	margin-left: 98px;
+}
+.experience {
+	margin-top: -125px;
+}
+
+.skills {
+	margin-top: -202px;
+}
+
+.exPlus {
+	margin-left: 103px;
+}
+
+.skPlus {
+	margin-left: 233px;
+	margin-top: 6px;
+}
+
+.interests {
+	margin-top: -585px;
+}
+
+.inPlus {
+	margin-left: 93px;
+}
+*/
+ul {
+	list-style: square;
+	margin-left: -25px;
+}
+
+ul ul {
+	list-style: none;
+	font-weight: 300;
+}

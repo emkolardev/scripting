@@ -1,0 +1,84 @@
+/*  font-family: 'Raleway', sans-serif;
+*/  
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  font-size:62.5%;
+  margin:0;
+  color:#222;
+  background-color:#f8f8f8;
+}
+
+a {
+  text-decoration:none;
+}
+
+header {
+  background-color:#EEE;
+  padding:0.5em;
+}
+
+.titleHeader {
+    border-bottom: 2px solid rgba(80,80,80,1);
+}
+
+article header {
+/*  background-color:#CCC;
+*/
+  padding: 0 25px 0 20px;
+  }
+
+article p {
+/*  text-indent:1em;
+*/  margin:2em;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
+}
+
+blockquote p {
+  font-style:italic;
+/*  font-family: Times;
+*/  
+  font-family: 'Old Standard TT', serif;
+  margin:2em;
+  font-size:2.5em;
+}
+
+h1, h2 {
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size:2.6em;
+  letter-spacing: .03em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3em;
+  letter-spacing: .15em;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.2em;
+  text-transform: uppercase; 
+  display: inline;
+  font-weight: 400;
+}
+
+time {
+  float: right;
+  color:rgba(50,100,100, 0.8);
+  text-transform:uppercase;
+  font-size: 1.2em;
+  display: inline;
+}
+
+nav {
+  text-align:center;
+  margin: 10em 0;
+}

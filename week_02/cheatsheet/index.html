@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="../../assets/css/normalize.css">
+	<link rel="stylesheet" href="../../assets/css/base.css">
+	<link rel="stylesheet" href="../../assets/css/grid.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header onclick="hideHeader()" title="Click to hide instructions" id="myHeader">
+		<h1>
+			HTML Cheat Sheet
+		</h1>
+		<h2>
+			Emily Kolar
+		</h2>
+		<p>
+			Below is a mockup of a webpage. Hover over the element for the tag name, then click it to read about using it! (Click me to close)
+		</p>
+	</header>
+	<div class="mockupBody" title="body" id="mockup">
+		<header class="mockupHeader" title="header" id="mockHeader">
+			<h1 title="h1" id="mockH1">
+				All About My Awesome Kitty
+			</h1>
+			<h2 title="h2" id="mockH2">
+				By Me
+			</h2>
+		</header>
+		<nav class="mockupNav" title="nav" id="mockNav">
+			<div class="ulDiv" title="ul" id="mockUl">
+				<ul>
+					<li title="li" id="mockLi">
+						Home
+					</li>
+					<li title="li" id="mockLi2">
+						Contact
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container" title="div" id="mockDiv">		
+			<article class="catArticle" title="article" id="mockArticle">	
+				<h3 title="h3" id="mockH3">From <a href="https://en.wikipedia.org/wiki/Cat" target="_blank" title="a" id="mockA">Wikipedia's "Cat" Page</a>:</h3>
+				<section title="section" id="mockSection">
+					The domestic cat (Felis catus or Felis silvestris catus) is a small, usually furry, domesticated, and carnivorous mammal. They are often called housecats when kept as indoor pets or simply cats when there is no need to distinguish them from other felids and felines. <br><span class="catSpan" title="span" id="mockSpan">Cats are often valued by humans for companionship and their ability to hunt vermin.</span>
+				</section>
+				<hr title="hr" id="mockHr">
+				<section title="section" id="mockSection2">
+					Cats are similar in anatomy to the other felids, with strong, flexible bodies, quick reflexes, sharp retractable claws, and teeth adapted to killing small prey. Cat senses fit a crepuscular and predatory ecological niche. Cats can hear sounds too faint or too high in frequency for human ears, such as those made by mice and other small animals. They can see in near darkness. Like most other mammals, cats have poorer color vision and a better sense of smell than humans.
+				</section>	
+				<hr title="hr" id="mockHr2">
+				<section title="section" id="mockSection3">
+					Despite being solitary hunters, cats are a social species and cat communication includes the use of a variety of vocalizations (mewing, purring, trilling, hissing, growling, and grunting), as well as cat pheromones and types of cat-specific body language.
+				</section>
+			</article>
+			<div class="listDiv" title="ol" id="mockOl">
+				<ol title="ol">
+					<h4 title="h4">
+						Reasons My Cat is #1:
+					</h4>
+					<li title="li">
+						He's fluffy
+					</li>
+					<li title="li">
+						He's cute
+					</li>
+					<li title="li">
+						He purrs when I scratch his belly
+					</li>					
+				</ol>
+			</div>
+			<img src="http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg" title="img" id="mockImg">
+			<form class="mockupForm" title="form" id="mockForm">
+				<div class="pDiv" title="p" id="mockP">
+					<p title="p">
+						We'd <strong title="strong" id="mockStrong">really appreciate it</strong> if you left a comment here in our comment form!
+					</p>
+				</div>
+				<label class="formLabel" title="label" id="mockLabel">Name:</label>
+				<input type="text" title="input (text)" id="mockInput">
+				<div class="clearfix"></div>
+				<textarea class="formComment" title="textarea" id="mockTextarea"></textarea>
+				<button type="button" title="button" id="mockButton">
+					Add Comment
+				</button>
+			</form>
+		</div>
+	</div>
+	<footer title="footer" id="mockFooter">
+		<p title="p">
+			&#169; My Name, 2015
+		</p>
+	</footer>
+<!--==================================
+jquery and my javascript
+====================================-->
+<script src="../../assets/js/jquery.js"></script>
+<script src="js/script.js"></script>	
+</body>
+</html>

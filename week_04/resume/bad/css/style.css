@@ -1,0 +1,126 @@
+/*=================
+FONTS
+=================*/
+
+/*
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Inconsolata', ;
+*/
+
+
+body {
+	background-image: url("../images/omgbirds.png");
+	background-repeat: repeat;
+}
+
+figure img {
+	max-width: 100%;
+}
+
+.headshot {
+	width: 200px;
+}
+
+.pear {
+	width: 250px;
+}
+
+.gun {
+	width: 290px;
+	float: right;
+}
+
+.gun img {
+	border: 3px dashed white;
+}
+
+header {
+	width: 90%;
+	margin: 25px auto;
+	border: 3px dotted white;
+	background-color: tomato;
+	border-radius: 50%;
+	padding-left: 150px;
+}
+
+header h1 {
+	position: absolute;
+	margin: -180px 0px 0px 210px;
+	color: blue;
+}
+
+header h2 {
+	position: absolute;
+	margin: -130px 0px 0px 210px;
+	color: green;
+}
+
+header h3 {
+	position: absolute;
+	margin: -90px 0px 0px 210px;
+}
+
+.resume {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 80px;
+}
+
+section {
+	padding: 20px;
+	font-size: 20px;
+	border-radius: 10px;
+	margin: 5px 0px;
+}
+
+section:hover {
+	border-color: yellow;
+	border-width: 5px;
+}
+
+ul {
+	list-style: square;
+}
+
+ul ul {
+	list-style: none;
+}
+
+.objective {
+	background-color: orange;
+	border: 3px dotted blue;
+	text-align: center;
+	color: red;
+	font-family: 'Shadows Into Light', cursive;
+	letter-spacing: .2em;
+}
+
+.education {
+	background-color: green;
+	border: 3px dashed blue;
+	font-family: 'Shadows Into Light', cursive;
+	letter-spacing: .2em;
+	border-radius: 30%;
+}
+
+.experience {
+	background-color: red;
+	border: 3px solid blue;
+	font-family: 'Indie Flower', cursive;
+}
+
+.skills {
+	background-color: pink;
+	border: 3px dotted blue;
+	font-family: 'Indie Flower', cursive;
+}
+
+.interests {
+	background-color: tomato;
+	border: 3px dashed blue;
+	font-family: 'Inconsolata', serif;
+	color: purple;
+	border-radius: 30%;
+}

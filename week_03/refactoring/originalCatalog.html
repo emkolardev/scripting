@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+	    <!--========================================================================================
+	    Stuff inside these blocks are my comments... other comments are old (came with the document) 
+	    =========================================================================================-->
+
+
+<head>
+	<title>Courses - Columbia College Chicago - Acalog ACMS™</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!--====================================================================================
+    Made this accessibility info part into a section... Maybe is hidden by default? Not sure
+    =====================================================================================-->
+	<section class="accessibility">
+		<h4>Different browsers use different keystrokes to activate accesskey shortcuts. Please reference the following list to use access keys on your system.</h4>
+
+	    <!--=============================================================
+	    Changed from <dl> to <ul> (no definitions/descriptions were used) 
+	    ==============================================================-->
+		<ul>
+			<li>Alt and the accesskey, for Internet Explorer on Windows</li>
+			<li>Shift and Alt and the accesskey, for Firefox on Windows</li>
+			<li>Shift and Esc and the accesskey, for Windows or Mac</li>
+			<li>Ctrl and the accesskey, for the following browsers on a Mac: Internet Explorer 5.2, Safari 1.2, Firefox, Mozilla, Netscape 6+.</li>
+		</ul>
+		<p>We use the following access keys on our gateway:</p>
+		<ul>
+			<li>n Skip to Navigation</li>
+			<li>k Accesskeys description</li>
+			<li>h Help</li>
+		</ul>
+	</section>
+
+
+   <!--====================================
+    Wrapped client-header in <header> tags 
+    ====================================-->
+	<!-- Start Client Header -->
+	<header class="clientHeader">
+    	<h1>Course Catalog</h1>
+        <p><a href="">Home</a> | <a href="">Course Catalog</a></p>
+	    <p><a href="">Email This Page</a> | <a href="">Catalog Help</a> | <a href="">Back To Top</a></p>
+	</header>
+	<!-- End Client Header -->
+
+
+   <!--====================================
+    Wrapped client-footer in <footer> tags 
+    ====================================-->
+	<!-- Start Client Footer -->
+	<footer class="clientFooter">
+	    <p>Every effort is made to ensure the accuracy of the information contained in this Columbia College Chicago Catalog; however, the Catalog is not a contract but rather a guide for the convenience of students. Columbia College Chicago reserves the right to change or withdraw courses; to change the fees, rules, and calendar for admission, registration, instruction, and graduation; and to change any of its policies or other provisions listed in the Catalog at any time.</p>
+        <ul>
+            <li><a href="">Site Map</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Visit Us</a></li>
+            <li><a href="">Directory</a></li>
+            <li><a href="">About Columbia</a></li>
+        </ul>
+        <p>© 2014 Columbia College Chicago</p>
+	</footer>
+	<!-- End Client Footer -->
+
+
+   <!--====================================
+    Form for choosing a catalog version
+    ====================================-->
+	<!-- Begin N3 -->
+	<form class="catChoose">
+	   	<time datetime="2015-09-21 00:01">Sep 21, 2015</time>	
+		<h2>2015-2016 Course Catalog</h2>
+  		<select>										
+		  	<option value="7" selected>2015-2016 Course Catalog</option>
+			<option value="6" >2014-2015 Course Catalog [ARCHIVED CATALOG]</option>
+			<option value="5" >2013-2014 Course Catalog [ARCHIVED CATALOG]</option>
+			<option value="4" >2012-2013 Course Catalog [ARCHIVED CATALOG]</option>
+			<option value="3" >2011-2012 Course Catalog [ARCHIVED CATALOG]</option>
+			<option value="1" >2010-2011 Undergraduate Course Catalog [ARCHIVED CATALOG]</option>
+		</select>
+		<input type="submit" value="Go">
+	</form>
+	<!-- End N3. -->
+
+
+   <!--====================================
+    Form for searching the whole catalog
+    ====================================-->
+	<!-- N2 goes here. -->
+	<form class="catSearch">
+		<input type="hidden" title="Cur Cat OID" name="cur_cat_oid" value="7">
+		<input type="hidden" title="Search Database" name="search_database" value="Search">
+		<input type="hidden" title="Search" name="search_db" value="Search">
+		<input type="hidden" title="cpage" name="cpage" value="1">
+		<input type="hidden" title="ecpage" name="ecpage" value="1">
+		<input type="hidden" title="ppage" name="ppage" value="1">
+		<input type="hidden" title="spage" name="spage" value="1">
+		<input type="hidden" title="tpage" name="tpage" value="1">
+		<h3>Catalog Search</h3>	
+		<input type="text">
+		<input type="checkbox"><label>Whole Word/Phrase</label>
+		<br>
+		<select>
+			<option value="-1">Select an option</option>
+			<option value="3">Courses</option>
+			<option value="1">Programs</option>
+			<option value="28">Departments</option>
+			<option value="30">Other Content</option>
+			<option value="33" selected>Entire Catalog</option>
+		</select>
+		<br>
+		<input type="submit" value="Go">
+		<p><a href="">Advanced Search</a></p>
+	</form>
+	
+
+	<!--====================================
+	I think this is the main navigation...
+	====================================-->
+	<nav class="catalogNav">
+		<ul class="catalogSections">
+			<li><a href="">Catalog Home</a></li>
+			<li><a href="">Academic Calendar</a></li>
+			<li><a href="">Academic Policies</a></li>
+			<li><a href="">Courses</a></li>
+			<li><a href="">Majors &amp; Programs</a></li>
+			<li><a href="">Programs &amp; Courses by Department</a></li>
+			<li><a href="">Requirements for Undergraduate Admission</a></li>
+			<li><a href="">Requirements for Graduate Admission</a></li>
+			<li><a href="">Special Programs</a></li>
+			<li><a href="">Learning Studio</a></li>
+			<li><a href="">Student Handbook</a></li>
+			<li><a href="">Student Financial Services</a></li>
+		</ul>
+		<p class="otherNavLinks"><a href="">My Favorites</a>
+		<br>
+		<a href=""><strong>HELP</strong></a></p>
+	</nav>
+<!-- End of N2 -->
+
+
+	<!--====================================
+	Started 'main' content here
+	====================================-->
+	<main class="mainContent">
+
+	   <!--====================================
+	    Header of the main content section
+	    ====================================-->
+		<header class="mainHeader">
+			<h2>2015-2016 Course Catalog</h2>					
+			<h3>Courses</h3>
+			<p class="headerOptions"><a href="">Print-Friendly Page</a> | <a href="">Add to Favorites</a> | <a href="">Course Numbering</a></p>
+		</header>
+
+	   <!--====================================
+	    Form for filtering course listings
+	    ====================================-->
+		<!-- Begin advanced search filter -->
+		<form class="filters">
+			<h3>Course Filter</h3>
+			<p>Filter this list of courses using course prefix, course code, keywords or any combination.</p>
+		    <label>Prefix:</label>
+		    <select name="filter[27]" tabindex="1" title="Choose a Course Prefix">
+		        <option value="-1">All prefixes&#8230;</option>
+				<option value="21">21</option>
+		        <option value="22">22</option>
+		        <option value="23">23</option>
+		        <option value="24">24</option>
+		        <option value="26">26</option>
+		        <option value="27">27</option>
+		        <option value="28">28</option>
+		        <option value="31">31</option>
+		        <option value="32">32</option>
+		        <option value="33">33</option>
+		        <option value="36">36</option>
+		        <option value="37">37</option>
+		        <option value="38">38</option>
+		        <option value="40">40</option>
+		        <option value="41">41</option>
+		        <option value="43">43</option>
+		        <option value="46">46</option>
+		        <option value="47">47</option>
+		        <option value="48">48</option>
+		        <option value="49">49</option>
+		        <option value="50">50</option>
+		        <option value="51">51</option>
+		        <option value="52">52</option>
+		        <option value="53">53</option>
+		        <option value="54">54</option>
+		        <option value="56">56</option>
+		        <option value="59">59</option>
+		        <option value="66">66</option>
+		        <option value="70">70</option>
+		        <option value="74">74</option>
+		        <option value="75">75</option>
+		    </select>
+			<label>Code or Number:</label>
+			<input type="text">
+			<label>Type</label>
+			<select>
+				<option value="-1">All types&#8230;</option>
+				<option value="251">Advertising and Public Relations</option>
+				<option value="236">American Sign Language</option>
+				<option value="266">Art and Art History</option>
+				<option value="237">Audio Arts and Acoustics</option>
+				<option value="235">Business and Entrepreneurship</option>
+				<option value="245">Cinema Art + Science</option>
+				<option value="240">Creative Arts Therapies</option>
+				<option value="244">Creative Writing</option>
+				<option value="238">Cultural Studies</option>
+				<option value="239">Dance</option>
+				<option value="265">Design</option>
+				<option value="241">Education</option>
+				<option value="242">English</option>
+				<option value="243">Fashion Studies</option>
+				<option value="268">First-Semester Experince</option>
+				<option value="259">Foreign Languages</option>
+				<option value="261">History</option>
+				<option value="262">Humanities</option>
+				<option value="248">Interactive Arts and Media</option>
+				<option value="250">Journalism</option>
+				<option value="252">Music</option>
+				<option value="253">Photography</option>
+				<option value="254">Radio</option>
+				<option value="256">Science and Mathematics</option>
+				<option value="247">Social Science</option>
+				<option value="257">Television</option>
+				<option value="258">Theatre</option>
+			</select>
+			<br>
+		    <label>Keyword or Phrase:</label>
+			<input type="text">		
+			<input type="checkbox">
+			<label for="exact_match">Find whole word or phrase only</label>	
+			<br>
+			<input type="hidden" title="Course Type" name="filter[32]" value="1">
+			<input type="hidden" title="cpage" name="filter[cpage]" id="cpage" value="1">
+			<input type="hidden" title="Cur Cat OID" name="cur_cat_oid" value="7">
+			<input type="hidden" title="Expand" name="expand" id="expand" value="">
+			<input type="hidden" title="navoid" name="navoid" id="navoid" value="1807">
+			<input type="submit" title="Search Database" name="search_database" value="Filter" tabindex="12">
+		</form>
+			<!-- End advanced search filter. -->
+
+	   <!--====================================
+	    List of courses
+	    ====================================-->
+		<ul class="courseListings">
+			<li><a href="">21-1040 Ceramics I</a></li>
+			<li><a href="">21-1042 Jewelry and Objects I</a></li>
+			<li><a href="">21-1310 Survey of Typography</a></li>		
+			<li><a href="">21-1320 Design Lab</a></li>
+			<li><a href="">21-1330 Information Design</a></li>	
+			<li><a href="">21-1390 Special Issues in Design</a></li>	
+			<li><a href="">21-1490 Special Issues in Illustration</a></li>
+			<li><a href="">21-1491 Illustration: Drawing to Print</a></li>
+			<li><a href="">21-1590 Special Issues in Advertising</a></li>
+			<li><a href="">21-1801 Contemporary Practice: InArch</a></li>
+			<li><a href="">21-1811 Architectural Draft &amp; Detailing</a></li>
+			<li><a href="">21-1813 AutoCad Fundamentals</a></li>
+			<li><a href="">21-1814 Manual Drafting</a></li>
+			<li><a href="">21-1819 Sources and Materials</a></li>
+			<li><a href="">21-1840 Digital Media for InArch I</a></li>	
+			<li><a href="">21-2043 Jewelry and Objects II</a></li>
+			<li><a href="">21-2330 Graphic Design I: Form and Structure</a></li>
+			<li><a href="">21-2331 Graphic Design for Photography Majors</a></li>
+			<li><a href="">21-2375 Website Design I</a></li>
+			<li><a href="">21-2400 Illustration History &amp; Practice</a></li>
+			<li><a href="">21-2410 Figure Drawing and Color</a></li>
+			<li><a href="">21-2414 Figure Drawing</a></li>
+			<li><a href="">21-2415 Illustration Studio</a></li>
+			<li><a href="">21-2420 Applied Drawing</a></li>
+			<li><a href="">21-2430 Illustration: Experimental Techniques</a></li>
+			<li><a href="">21-2510 Advertising Art Direction: Introduction</a></li>	
+			<li><a href="">21-2520 Advertising Design</a></li>
+			<li><a href="">21-2611 Integrated Design Studio</a></li>
+			<li><a href="">21-2612 Intro to Visual Design Studies</a></li>		
+			<li><a href="">21-2725 Interaction Design</a></li>
+			<li><a href="">21-2735 Technical Illustration</a></li>
+			<li><a href="">21-2740 Toy Design</a></li>
+			<li><a href="">21-2745 Exhibition Design</a></li>
+			<li><a href="">21-2750 3D NURBS Modeling</a></li>
+			<li><a href="">21-2801 Design Studio II</a></li>
+			<li><a href="">21-2805 Design History: Spaces + Objects</a></li>	
+			<li><a href="">21-2806 Human Dimension in InArch</a></li>		
+			<li><a href="">21-2810 Lighting for InArch</a></li>		
+			<li><a href="">21-2811 Textiles for InArch</a></li>
+			<li><a href="">21-2815 Building Codes for InArch</a></li>
+			<li><a href="">21-2840 Digital Media for InArch II</a></li>
+			<li><a href="">21-2841 Digital Media for InArch III</a></li>
+			<li><a href="">21-2850 Construction Documents I</a></li>
+			<li><a href="">21-2890 InArch: Introductory Studio</a></li>
+			<li><a href="">21-2901 Special Topics in Design:</a></li>
+			<li><a href="">21-2901LDM Special Topics in Art and Design Practice: Florence, Italy</a></li>
+			<li><a href="">21-2936 Moldmaking and Casting</a></li>
+			<li><a href="">21-2941 Ceramics II</a></li>
+			<li><a href="">21-2944 Furniture Design</a></li>
+			<li><a href="">21-2946 Furniture Construction</a></li>
+			<li><a href="">21-2961 Metal Fabrication</a></li>
+			<li><a href="">21-3340 Typography for Graphic Design</a></li>
+			<li><a href="">21-3345 Publication Design</a></li>
+			<li><a href="">21-3347 Book Design</a></li>
+			<li><a href="">21-3350 Graphic Design II:Semiotics and Form</a></li>
+			<li><a href="">21-3355 Branding Identity</a></li>
+			<li><a href="">21-3358 Graphic Design III: Visual Identity and Narrative</a></li>
+			<li><a href="">21-3360 Packaging Design</a></li>
+			<li><a href="">21-3370 Experimental Typography</a></li>
+			<li><a href="">21-3372 Graphic Design IV: Narrative and Research Studio</a></li>
+			<li><a href="">21-3376 Website Design II</a></li>
+			<li><a href="">21-3378 Design Lab II</a></li>
+			<li><a href="">21-3380 Graphic Design V: Branded Environments</a></li>
+			<li><a href="">21-3381 Intro to Web Content Management</a></li>
+			<li><a href="">21-3385 Professional Portfolio Development</a></li>
+			<li><a href="">21-3420 BFA Review in Illustration</a></li>
+			<li><a href="">21-3424 Drawing the Graphic Novel</a></li>			
+			<li><a href="">21-3430 Figure Illustration</a></li>
+			<li><a href="">21-3432 Children&#039;s Book Illustration</a></li>
+			<li><a href="">21-3435 Cartooning</a></li>	
+			<li><a href="">21-3447 Illustration: Motion</a></li>	
+			<li><a href="">21-3448 Illustration Portfolio</a></li>
+			<li><a href="">21-3460 Digital Illustration</a></li>
+			<li><a href="">21-3465 Illustration: Sequence</a></li>
+			<li><a href="">21-3475 History of Political and Social Illustration</a></li>
+			<li><a href="">21-3482 Editorial Illustration</a></li>
+			<li><a href="">21-3485 Illustration for Film and Animation</a></li>
+			<li><a href="">21-3500 Art Director/Commercial Photographer</a></li>
+			<li><a href="">21-3525 Art Director/Copywriter Team</a></li>
+			<li><a href="">21-3530 Photo Communication</a></li>
+			<li><a href="">21-3535 Storyboard Development</a></li>
+			<li><a href="">21-3540 Creative Strategies in Art Direction I</a></li>
+			<li><a href="">21-3542 Creative Strategies in Art Direction II</a></li>
+			<li><a href="">21-3550 Advertising Communication</a></li>
+			<li><a href="">21-3584 Management for Designers</a></li>
+			<li><a href="">21-3700 Product Design IV: Design Research</a></li>
+			<li><a href="">21-3710 Product Design V: Client Project</a></li>
+			<li><a href="">21-3715 Digital Presentation Techniques</a></li>
+			<li><a href="">21-3720 Manufacturing for Product Design</a></li>
+			<li><a href="">21-3740 Product Design Thesis I</a></li>
+			<li><a href="">21-3741 Product Design Thesis II</a></li>
+			<li><a href="">21-3750 Product Design Professional Business Practices</a></li>
+			<li><a href="">21-3801 Construction Methods for InArch</a></li>
+			<li><a href="">21-3802 Research Methods for InArch</a></li>
+			<li><a href="">21-3803 Design Studio III: Code Compliance</a></li>
+			<li><a href="">21-3804 Design Studio IV: Adaptive Reuse</a></li>
+			<li><a href="">21-3805 Design Studio V: Global Issues</a></li>
+			<li><a href="">21-3806 Senior Project A: Research and Programming</a></li>
+			<li><a href="">21-3807 Senior Project B: Schematic Design</a></li>
+			<li><a href="">21-3808 Senior Project C: Design Development</a></li>
+		</ul>
+
+	   <!--====================================
+	    Section for pagination options
+	    ====================================-->
+		<p class="paginate">Page: 
+			<strong>1</strong>
+			| <a href="">2</a> 
+			| <a href="">3</a> 
+			| <a href="">4</a> 
+			| <a href="">5</a> 
+			| <a href="">6</a> 
+			| <a href="">7</a> 
+			| <a href="">8</a> 
+			| <a href="">9</a> 
+			| <a href="">10</a> 
+			| <a href="">11</a> 
+			&#8230;
+			<a href="">Forward 10</a> -&gt; <a href="">31</a>
+		</p>
+
+   <!--====================================
+    End of main content 
+    ====================================-->
+	</main>
+		
+
+   <!--====================================
+    Footer of main content
+    ====================================-->		
+	<footer class="mainFooter">
+		<p class="footerLinks"><a href="">Back to Top</a> | <a href="">Print-Friendly Page</a> | <a href="">Add to Favorites</a> | <a href="">Mobile Site</a></p>
+		<p>All <a href="">catalogs</a> &#169; 2015 Columbia College Chicago.</p>
+		<p>Powered by the Acalog™ Academic Catalog Management System™ (ACMS™).</p>
+	</footer>
+
+</body>
+</html>
