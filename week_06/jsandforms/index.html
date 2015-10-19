@@ -14,6 +14,71 @@
     <link rel="stylesheet" href="style.css">
   </head>
 <body>
+    <div class="output" id="viewML">
+        <span class="close" onclick="hideOut();">X</span>
+        <p>Yo VIP, let's kick it!<br>
+        Ice Ice Baby, Ice Ice Baby</p>
 
+        <p>All right,  <span class="blank verb"></span>,  <span class="blank verb" id=""></span> and  <span class="blank verb" id=""></span><br>
+        <span class="nameSp"></span> is back with my brand new  <span class="blank noun" id=""></span><br>
+        Something grabs a hold of me  <span class="blank adverb" id=""></span><br>
+        Flow like a  <span class="blank noun" id=""></span> daily and nightly<br>
+        Will it ever  <span class="blank verb" id=""></span>? Yo, I don't know<br>
+        Turn off the lights and I'll  <span class="blank verb" id=""></span><br>
+        To the  <span class="blank adj" id="adj"></span> I rock a mic like a  <span class="blank insult" id=""></span></br>
+        Light up a stage and  <span class="blank verb" id=""></span> a chump like a  <span class="blank noun" id=""></span>.</p>
+    </div>
+  <header class="myHeader">
+    <h1>Mad Lib Time?</h1>
+  </header>
+  <div class="wrapper">
+    <main>
+      <form class="myForm" action="#">
+        <fieldset class="infoFields">
+          <legend>Info</legend>
+          <label>Your First Name:</label><input type="text" class="nameIn" name="alias" autofocus>
+          <br>
+          <label>Your favorite color:</label><input type="color" id="colorIn" name="color" value="#EE2222">
+          <br>
+          </fieldset>
+          <fieldset class="madFields">
+          <legend>Mad Lib Time</legend>
+          <label>Verb:</label><input type="text" class="verbIn">
+          <br>
+          <label>Verb: </label><input type="text" class="verbIn">
+          <br>
+          <label>Verb:</label><input type="text" class="verbIn">
+          <br>
+          <label>Noun:</label><input type="text" class="nounIn">
+          <br>
+          <label>Adverb:</label><input type="text" class="adverbIn">
+          <br>
+          <label>Noun:</label><input type="text" class="nounIn">
+          <br>
+          <label>Verb:</label><input type="text" class="verbIn">
+          <br>
+          <label>Verb:</label><input type="text" class="verbIn">
+          <br>
+          <label>Adjective:</label><input type="text" class="adjIn">
+          <br>
+          <label>Insult:</label><input type="text" class="insultIn">
+          <br>
+          <label>Verb:</label><input type="text" class="verbIn">
+          <br>
+          <label>Noun:</label><input type="text" class="nounIn">
+          <br>
+        </fieldset>
+        <br>
+        <div class="btnContainer">
+          <input id="submitForm" type="button" value="Send It Off!" onclick="madLib();" class="btn submit">
+          <input id="resForm" type="reset" value="Reset Form" class="btn reset">
+        </div>
+    </form>
+    </main>
+  </div>
+  <footer>
+  <p>Emily Kolar, 2015</p>
+  </footer>
+<script src="script.js"></script>
 </body>
 </html>
