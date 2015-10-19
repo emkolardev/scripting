@@ -1,0 +1,94 @@
+/*=============================================*/
+/* box-sizing: border-box is located in my base.css file */
+
+body {
+	background-color: rgba(100,100,100,1);
+}
+
+.header {
+	min-height: 40px;
+	background-color: rgb(20,180,180);
+	padding: 20px;
+	opacity: 0.5;
+}
+
+.h1 {
+	font-size: 22px;
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 100%;
+	margin: 20px auto;
+	padding: 10px;
+}
+
+/*=============================================*/
+/* mobile-first column styles */
+
+.col, .col-2, .col-3 {
+	width: 100%;
+	padding: 5px;
+}
+
+.content {
+	border-radius: 5px;
+	color: white;
+	padding: 40px 20px;
+	text-align: center;
+	height: 200px;
+	opacity: 0.6;
+	border-right: 1px solid rgba(255,255,255,1);
+	border-left: 1px solid rgba(255,255,255,1);
+}
+
+.purple {
+	background-color: rgba(178,33,152,1);
+}
+
+.green {
+	background-color: rgba(86,201,154,1);
+}
+
+.blue {
+	background-color: rgba(96,153,226,1);
+}
+
+/*=============================================*/
+/* for all except super-small sizes */
+
+@media (min-width: 480px) {
+	.col-2 {
+		width: 50%;
+		float: left;
+	}
+	.clear:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+	.content {
+		padding: 20px 10px;
+	}
+}
+
+/*=============================================*/
+/* for tablet-sizes and up */
+
+@media (min-width: 760px) {
+	.wrapper {
+		padding: 20px;
+	}
+
+	.content {
+		height: 450px;
+	}
+
+	.col-3 {
+		width: calc(100%/3);
+		float: left;
+	}
+}
