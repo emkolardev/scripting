@@ -1,0 +1,174 @@
+
+body {
+	background-color: rgba(250,250,250,1);
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.myHeader {
+	height: 100px;
+	width: 100%;
+	background-color: rgba(191,26,139,0.5);
+	margin-top: 0px;
+	text-align: center;
+	padding: 1px;
+	border-bottom: 3px solid rgba(191,26,139,0.8);
+}
+
+.wrapper {
+	width: 95%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.myHeader h1 {
+	color: white;
+}
+
+.myForm {
+	line-height: 32px;
+	padding: 20px;
+}
+
+.myForm label, .myForm legend {
+	text-transform: uppercase;
+	margin-right: 10px;
+}
+
+sup, small {
+	opacity: 0.8;
+	margin: 5px;
+}
+
+label {
+	letter-spacing: .1rem;
+	color: black;
+}
+
+.asterisk {
+	color: rgba(200,10,10,0.8);
+	font-weight: 700;
+	margin-left: 5px;
+}
+
+.myForm legend {
+	border-right: 2px solid rgba(191,26,139,0.5);
+	border-left: 2px solid rgba(191,26,139,0.5);
+	border-radius: 5px;
+	padding: 0 5px;
+	font-weight: 700;
+	color: rgba(180,180,180,1);
+	background-color: rgba(191,26,139,0.05);
+}
+
+.myForm fieldset {
+	border: 2px solid rgba(191,26,139,0.5);
+	border-radius: 4px;
+	margin: 20px 0;
+	padding: 10px 20px 20px;
+}
+
+.myForm select, .myForm option {
+	background-color: white;
+	padding-left: 5px;
+	height: 30px;
+}
+
+.myForm fieldset input {
+	border-radius: 4px;
+	border: 1px solid rgba(180,180,180,1);
+	cursor: pointer;
+	margin: 5px;
+	height: 28px;
+	padding-left: 5px;
+	background: white;
+	box-shadow: 2px 2px 3px rgba(220,220,220,1) inset;
+}
+
+.myForm input:invalid {
+	background-color: rgba(200,10,10,0.08);
+	border: 1px solid rgba(200,10,10,0.6);
+}
+
+.myForm textarea {
+	padding-left: 5px;
+	background-color: white;
+}
+
+.myForm input:active, .myForm input:focus {
+	outline-color: rgba(191,26,139,1);
+	outline-width: medium;
+}
+
+.myForm [type=checkbox], .myForm [type=radio] {
+	margin: 0 8px 0 0;
+	box-shadow: none;
+	border-radius: 0;
+	height: auto;
+	padding: 0;
+}
+
+.myForm [type=number], [type=date] {
+	color: rgba(80,80,80,1);
+}
+
+.myForm [for=chkMeh] {
+	text-decoration: line-through;
+	opacity: 0.5;
+}
+
+.myForm [type=color] {
+	box-shadow: none;
+	padding: 0 3px;
+}
+
+.myForm [type=range] {
+	margin: 5px 8px ;
+}
+
+.btnContainer {
+	width: 100px;
+	margin: 0 auto;
+	width: 225px;
+	height: 50px;
+}
+
+.btn {
+	display: inline-block;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+	padding: 6px 12px 6px 12px;
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+	border: none;
+	width: 100px;
+	height: 100%;
+	margin: 0px 5px 0px 5px;
+}
+
+.reset {
+	background-color: rgba(200,10,10,0.15);
+}
+
+.reset:hover {
+	background-color: rgba(200,10,10,0.5);
+	border-color: rgba(200,10,10,1);
+}
+
+.submit {
+	background-color: rgba(10,200,10,0.15);
+}
+
+.submit:hover {
+	background-color: rgba(10,200,10,0.5);
+	border: 2px solid rgba(10,200,10,1);
+}
+
+
+footer {
+	background-color: rgb(150,150,150);
+	opacity: 0.2;
+	text-align: right;
+	padding: 10px;
+	height: 80px;
+}
+

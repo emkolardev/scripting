@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <title>Emily SWM</title>
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <header class="myHeader">
+    <h1>Big Brother Data Collection Services</h1>
+  </header>
+  <div class="wrapper">
+    <main>
+      <form class="myForm" action="#">
+        <fieldset>
+          <legend>Credentials</legend>
+          <label>Alias:</label><input type="text" id="aliasIn" name="alias" autofocus>
+          <br>
+          <label>Challenge Phrase:</label><input id="pwIn" type="password" name="pw">
+          <br>
+          <label>Email Address:</label><input id="emailIn" type="email" name="email">
+          <br>
+          <label>Birthday:</label><input id="bday" type="date" name="bday">
+          <br>
+        </fieldset>
+        <fieldset>
+          <legend>About You</legend>
+          <label>Favorite Color:</label><input id="color" type="color" name="fcolor" value="#BF1A8B">
+          <br>
+          <label>On a scale where ten is the most possible, how much do you love cats?</label>
+          <br>
+          <sup>9</sup></label> <input id="range" type="range" name="kittens" min="9" max="11"><sup>11</sup>      
+          <br>
+          <label>Number of cats in your household:</label><input id="cats" type="number" value="2" min="1"><small><span class="asterisk">*</span> Minimum Requirement: 1</small>
+          <br>
+          <labeL>What would you say is your best characteristic?</labeL>
+          <input id="bestChar" list="traits" name="persType">
+          <datalist id="traits">
+            <option value="Active"></option>
+            <option value="Ambitious"></option>
+            <option value="Brainy"></option>
+            <option value="Bold"></option>
+            <option value="Charming"></option>
+            <option value="Courageous"></option>
+            <option value="Creative"></option>
+            <option value="Decisive"></option>
+            <option value="Devoted"></option>
+            <option value="Enthusiastic"></option>
+            <option value="Ethical"></option>
+            <option value="Forgiving"></option>
+            <option value="Generous"></option>
+            <option value="Graceful"></option>
+            <option value="Hard-working"></option>
+            <option value="Honest"></option>
+            <option value="Interested"></option>
+            <option value="Inventive"></option>
+            <option value="Just"></option>
+            <option value="Kind"></option>
+            <option value="Leader"></option>
+            <option value="Loving"></option>
+            <option value="Meticulous"></option>
+            <option value="Modest"></option>
+            <option value="Non-judgemental"></option>
+            <option value="Optimistic"></option>
+            <option value="Perseverence"></option>
+            <option value="Persuasive"></option>
+            <option value="Quirky"></option>
+            <option value="Realistic"></option>
+            <option value="Responsible"></option>
+            <option value="Self-reliant"></option>
+            <option value="Sneaky"></option>
+            <option value="Systematic"></option>
+            <option value="Thoughtful"></option>
+            <option value="Tough"></option>
+            <option value="Values"></option>
+            <option value="Unpretentious"></option>
+            <option value="Witty"></option>
+            <option value="Young-at-Heart"></option>
+            <option value="Zealous"></option>
+          </datalist>
+        </fieldset>
+        <fieldset>
+          <legend>Pop Quiz</legend>
+          <label>Choose a strange word:</label>
+          <select name="weirdwords">
+            <option value="default" selected>(Pick One)</option>
+            <option value="erinaceous">Erinaceous</option>
+            <option value="finnimbrun">Finnimbrun</option>
+            <option value="floccinaucinihilipilification">Floccinaucinihilipilification</option>
+            <option value="inaniloquent">Inaniloquent</option>
+            <option value="mesonoxian">Mesonoxian</option>
+            <option value="nihilarian">Nihilarian</option>
+            <option value="nudiustertian">Nudiustertian</option>
+            <option value="phenakism">Phenakism</option>
+            <option value="pulveratricious">Pulveratricious</option>
+            <option value="scopperloit">Scopperloit</option>
+            <option value="tyrotoxism">Tyrotoxism</option>
+            <option value="zabernism">Zabernism</option>
+          </select>
+          <br>
+          <label>Take a guess- what do you think it means?</label>
+          <br>
+          <textarea name="guessDef" rows="5" cols="50" placeholder="Your definition..."></textarea>
+        </fieldset>
+        <fieldset id="survey">
+          <legend>Brief Survey</legend>
+          <label>For what purpose did you fill out this form today?</label>
+          <br>
+          <input id="radEmp" type="radio"><label for="job">Employer (Current)</label>
+          <input id="radProEmp" type="radio"><label for="bgCheck">Employer (Prospective)</label>
+          <input id="radSch" type="radio"><label for="school">College or University</label>
+          <label>How was your experience today using Big Brother Data Collection Services?</label>
+          <br>
+          <input type="checkbox" id="awes"><label for="chkAwes">Awesome</label>
+          <input type="checkbox" id="soop"><label for="chkSoop">Sooper Fun</label>
+          <input type="checkbox" id="fav"><label for="chkFav">New Favorite Activity</label>
+          <input type="checkbox" id="meh" disabled><label for="chkMeh">Could Be Better</label>
+        </fieldset>
+        <br>
+        <div class="btnContainer">
+          <input id="submitForm" type="submit" value="Send It Off!" onsubmit="" class="btn submit">
+          <input id="resForm" type="reset" value="Reset Form" class="btn reset">
+        </div>
+      </form>
+      <output name="uData" form="myForm" id="viewInput"></output>
+    </main>
+  </div>
+  <footer>
+  <p>Emily Kolar, 2015</p>
+  </footer>
+</body>
+</html>
