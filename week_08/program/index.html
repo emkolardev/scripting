@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Week 8 Program</title>
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<form id="numForm" class="form">
+			<div class="wrapper">
+				<h1>Magic Number</h1>
+				<label for="numInput">Enter any number:</label><br>
+				<input type="number" id="num">	
+				<br>
+				<div id="numBtn" class="btn">Get Magic Number</div>
+			</div>
+		</form>
+
+		<form id="qForm" class="form">
+			<div class="wrapper">
+				<h1>Q and A</h1>
+				<label for="q1">Do you like cats? (yes/no)</label><br>
+				<input type="text" id="q1">
+				<br>
+				<label for="q2">What's your favorite kind of cat?</label><br>
+				<input type="text" id="q2">
+				<br>
+				<label for="q3">What's the best name for a cat?</label><br>
+				<input type="text" id="q3">
+				<br>
+				<label for="q4">What's the best color of cat?</label><br>
+				<input type="text" id="q4">				
+				<br>
+				<label for="q5">What's your favorite spot for napping?</label><br>
+				<input type="text" id="q5">
+				<br>				
+				<div id="qaBtn" class="btn">Order Up!</div>
+			</div>
+		</form>
+		<form id="quizForm" class="form">
+			<div class="wrapper">
+				<h1>Alternate Magic Number</h1>
+				<label for="qz1">Enter any number:</label><br>
+				<input type="number" name="qz1" id="qz1">
+				<br>
+				<label for="qz2">Choose a color:</label><br>
+				<input type="radio" name="qz2" id="q2a" value="1" checked>Blue
+				<input type="radio" name="qz2" id="q2b" value="2">Red
+				<input type="radio" name="qz2" id="q2c" value="3">Green
+				<br>
+				<label for="qz3">Choose a holiday:</label><br>
+				<input type="radio" name="qz3" value="1" checked>Thanksgiving
+				<input type="radio" name="qz3" value="2">Easter
+				<input type="radio" name="qz3" value="3">Independence Day
+				<br>
+				<label for="qz4">What month were you born in? (1-12)</label><br>
+				<input type="number" name="qz4" id="qz4">
+				<br>
+				<label for="qz5">What day of the month were you born on? (1-30)</label><br>
+				<input type="number" name="qz5" id="qz5">
+				<br>			
+				<div id="qzBtn" class="btn">Magic It Up!</div>
+			</div>
+		</form>
+	</div>
+    <script src="../../assets/js/jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
