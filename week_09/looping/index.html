@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../assets/css/normalize.css">
     <link rel="stylesheet" href="../../assets/css/base.css">
     <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
 <body>
   <div class="wrapper">
@@ -22,6 +23,12 @@
     <div class="container">
       <p id="textOut">
       </p>
+      <form class="io">
+        <div class="fake-console" id="fakeConsole"></div>
+        <input type="text" class="fake-console" id="consoleInput"/>
+        <input type="button" class="send" id="sendInput" value="submit"/>
+        <label class="infoLabel">(i don't do anything yet...)</label>
+      </form>
     </div> <!-- END CONTAINER -->
     <footer>
     </footer>
@@ -40,13 +47,13 @@ var cities = [
   "Kalamazoo, MI",
   "Chicago, IL"
 ];
-var par = document.getElementById("textOut");
+var par = document.getElementById("fakeConsole");
 
 function countBy(interval) {
-  printString("~~~~ count by " + interval + "s ~~~~"); lineBr();
+  printIt("~~~~ count by " + interval + "s ~~~~"); lineBr();
   for (var i = 1; i <= 100; i++) {
     if (i % interval == 0) {
-      printString(i); 
+      printIt(i); 
       lineBr();
     }
   }
@@ -54,32 +61,34 @@ function countBy(interval) {
 
 function printWhile() {
   var index = 0;
-  printString("~~~~ print cities: while ~~~~"); lineBr();
+  printIt("~~~~ print cities: while ~~~~"); lineBr();
   while (index < cities.length) {
-    printString(cities[index]); 
+    printIt(cities[index]); 
     lineBr();
     index++;
   }
 };
 
 function printFor() {
-  printString("~~~~ print cities: for ~~~~"); lineBr();
+  printIt("~~~~ print cities: for ~~~~"); lineBr();
    for (var i = 0; i < cities.length; i++) {
-    printString(cities[i]); 
+    printIt(cities[i]); 
     lineBr();
   }
 };
 
 function printEach() {
-  printString("~~~~ print cities: foreach(callback) ~~~~"); lineBr();
+  printIt("~~~~ print cities: foreach(callback) ~~~~"); lineBr();
   cities.forEach(function (value) {
-    printString(value); 
+    printIt(value); 
     lineBr();
    });
 };
 
-function printString(output) {
-  // print to console and then to html
+function printIt(output) {
+  // there's not really a reason to do this, just wanted to try and use the isNaN() method
+  var isString = isNaN(output);
+  if (isString) { output = output.toLowerCase(); }
   console.log(output);
   str = document.createTextNode(output);
   par.appendChild(str); 
