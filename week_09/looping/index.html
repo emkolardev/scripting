@@ -26,12 +26,81 @@
     <footer>
     </footer>
   </div> <!-- END WRAPPER -->
-<script src="js/script.js"></script>
 <script>
-  count(); 
+var str, br;
+var cities = [
+  "Saint Louis, MO", 
+  "Rolla, MO",
+  "Baraboo, WI", 
+  "Warrenton, MO",
+  "New York, NY",
+  "Saint Charles, MO",
+  "O'Fallon, MO",
+  "Petaluma, CA",
+  "Kalamazoo, MI",
+  "Chicago, IL"
+];
+var par = document.getElementById("textOut");
+
+function countBy(interval) {
+  printString("~~~~ count by " + interval + "s ~~~~"); lineBr();
+  for (var i = 1; i <= 100; i++) {
+    if (i % interval == 0) {
+      printString(i); 
+      lineBr();
+    }
+  }
+};
+
+function printWhile() {
+  var index = 0;
+  printString("~~~~ print cities: while ~~~~"); lineBr();
+  while (index < cities.length) {
+    printString(cities[index]); 
+    lineBr();
+    index++;
+  }
+};
+
+function printFor() {
+  printString("~~~~ print cities: for ~~~~"); lineBr();
+   for (var i = 0; i < cities.length; i++) {
+    printString(cities[i]); 
+    lineBr();
+  }
+};
+
+function printEach() {
+  printString("~~~~ print cities: foreach(callback) ~~~~"); lineBr();
+  cities.forEach(function (value) {
+    printString(value); 
+    lineBr();
+   });
+};
+
+function printString(output) {
+  // print to console and then to html
+  console.log(output);
+  str = document.createTextNode(output);
+  par.appendChild(str); 
+};
+
+function lineBr() {
+  console.log("\n");
+  par.appendChild(document.createElement("br"));  
+};
+
+function main() {
+  countBy(2); 
+  lineBr();
   printWhile(); 
+  lineBr();
   printFor(); 
+  lineBr();
   printEach();
+};
+
+document.onload = main();
 </script>
 </body>
 </html>
