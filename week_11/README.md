@@ -1,4 +1,4 @@
-##css animations
+###css animations
 
 this is a little animated scene i started on a few months ago. for this assignment, i finished it up, removed some elements, fixed some things, and tweaked the animation timings to be more exact.
 
