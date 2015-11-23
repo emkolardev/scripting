@@ -11,4 +11,3 @@ iam.colum.edu/students/emily.kolar/scripting/week_04/pairprog/index.html
 iam.colum.edu/students/emily.kolar/scripting/week_04/resume/bad/index.html
 iam.colum.edu/students/emily.kolar/scripting/week_04/resume/good/index.html
 iam.colum.edu/students/emily.kolar/scripting/week_04/resume/good-v2/index.html
-https://github.com/emkolardev
