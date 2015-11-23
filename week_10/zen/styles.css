@@ -1,0 +1,64 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+box-sizing: border-box
+http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+set a standard type... and make it look nice, yo
+(courtesy of shaun crittenden, base.css) */
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+base element styling */
+
+body { 
+	color: #64645A; 
+	background: #F3E8B2;
+	color: #666;
+	line-height: 1.6;
+}
+
+#zen-intro header {
+  padding: 20px;
+}
+
+#zen-intro header h1 {
+  color: rgba(140,140,140,0.5);
+}
+
+#zen-intro header h2 {
+  color: #FB776A;
+}
+
+.preamble p, .explanation p, .participation p, .benefits p, .requirements p {
+  margin:10px 20px 10px 20px;
+}
+
+.preamble p:nth-child(4) {
+  background: #B5DEA2;
+  margin:0;
+  padding:10px 25px 30px 25px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+background images */
+.preamble h3, 
+.explanation h3, 
+.participation h3, 
+.benefits h3, 
+.requirements h3 {
+	background: ;
+}
+
