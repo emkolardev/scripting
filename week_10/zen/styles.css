@@ -11,13 +11,20 @@ html {
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 set a standard type... and make it look nice, yo
-(courtesy of shaun crittenden, base.css) */
+(courtesy of shaun crittenden, base.css) 
+also do some other font things */
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+p::first-letter {
+  font-weight: 700;
+  font-size: 30px;
+
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -4,11 +4,18 @@
 	http://www.csszengarden.com/
 	** Only kept some of the original comments/tips **
 =================================================================-->
+
+<!--===============================================================
+
+	wanted to try out setInterval(), so that's mainly what I
+	did here
+
+=================================================================-->
+
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>(Adv. Selectors on CSSZengarden)</title>
-	<link rel="stylesheet" media="screen" href="/214/214.css?v=8may2013">
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Dave Shea">
@@ -22,6 +29,8 @@
 		probably 95% of this styles.css file is my work
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 	<link rel="stylesheet" href="styles.css">
+	<script src="randomColor.js"></script>
+	<script src="script.js"></script>
 </head>
 <!--
 	- use :first-child, :last-child and :nth-child to get at non-classed elements
@@ -173,5 +182,6 @@
 	</div>
 	<div class="extra1" role="presentation"></div><div class="extra2" role="presentation"></div><div class="extra3" role="presentation"></div>
 	<div class="extra4" role="presentation"></div><div class="extra5" role="presentation"></div><div class="extra6" role="presentation"></div>
+<script>setRandomColors(); checkTheTime();</script>
 </body>
 </html>
