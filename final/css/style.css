@@ -24,6 +24,10 @@ header h1 {
 	font-size: 22px;
 }
 
+header sup {
+	color: rgba(200,200,200,1);
+}
+
 .theCode {
 	width: 90%;
 	margin: 20px auto;
