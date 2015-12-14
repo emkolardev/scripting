@@ -48,6 +48,7 @@
 - Webcomponentsjs: https://github.com/webcomponents/webcomponentsjs)
 - JQuery: https://jquery.com/
 - Lightbox: https://github.com/lokesh/lightbox2/
+- Hammer: https://hammerjs.github.io
 
 ###todo:
 - implement better touch gestures with hammer
