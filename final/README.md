@@ -13,6 +13,9 @@ uses simple web components to create flexible lightbox2 photo galleries
 - lightbox.min.js (lightbox/js/lightbox.min.js)
 - lightbox.css (lightbox/css/lightbox.css)
 
+###include for touch gestures (not very useful at the moment):
+- hammer.min.js (js/vendor/hammer.min.js)
+
 ###about the u-photo html component:
 - creates a gallery image with built-in lightbox features
 
@@ -43,3 +46,8 @@ uses simple web components to create flexible lightbox2 photo galleries
 - Webcomponentsjs: https://github.com/webcomponents/webcomponentsjs)
 - JQuery: https://jquery.com/
 - Lightbox: https://github.com/lokesh/lightbox2/
+
+###todo:
+- implement better touch gestures with hammer
+- figure out why u-gallery elements only work in chrome
+- fix the gap property so it doesn’t sometimes break the grid
