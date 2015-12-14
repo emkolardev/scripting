@@ -1,7 +1,8 @@
 #ugallery
 
-uses polymer web components to create flexible lightbox2 photo galleries
-in the process of implementing touch gestures with hammer.js
+- uses polymer web components to create flexible lightbox2 photo galleries
+- in the process of implementing touch gestures with hammer.js
+- sam server link: http://iam.colum.edu/students/emily.kolar/scripting/final/index.html
 
 ###the components:
 - u-photo.html (components/u-photo.html)
