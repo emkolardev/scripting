@@ -1,43 +1,100 @@
-<!doctype html>
-<html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-    <title>Emily SWM</title>
-    <link rel="stylesheet" href="../assets/css/normalize.css">
-    <link rel="stylesheet" href="../assets/css/base.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-  </head>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Emily Kolar">
+	<title>Demo</title>
+	<!-- import jquery, webcomponentsjs lite, and the lightbox css -->
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src="bower/webcomponentsjs/webcomponents-lite.js"></script>
+	<!-- import hammer -->
+	<script src="js/vendor/hammer.min.js"></script>
+	<link rel="stylesheet" href="lightbox/css/lightbox.css">
+	<!-- import the u-photo and u-gallery templates -->
+	<link rel="import" href="components/u-photo.html">
+	<link rel="import" href="components/u-gallery.html">
+	<!-- styles just for demo pages (not needed for components to work) -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-  <div class="wrapper">
-    <header>
-      <a href="http://iam.colum.edu/students/emily.kolar/scripting">
-        <h1>
-          Scripting for Web and Mobile
-        </h1>
-      </a>
-      <h2>
-        Emily Kolar - Final 
-      </h2>
-    </header>
-    <div class="container">
-      <article>
-        <ul id="work">
-          <a href="reactapp/index.html" class="blueLink">
-          	<li class="blue">
-           		ReactJS App
-            </li>
-          </a>       
-        </ul>
-      </article>
-    </div> <!-- END CONTAINER -->
-    <footer>
-    </footer>
-  </div> <!-- END WRAPPER -->
-</body>
+	<header>
+		<a href="index.html">Ex #1</a> | <a href="index2.html">Ex #2</a> | <a href="index3.html">Ex #3</a>
+		<h1>A series of single u-photo elements, without any u-gallery wrappers:</h1>
+	</header>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+	<u-photo> element:
+	creates a gallery image with built-in lightbox features
+
+	options:
+	- image: string, path to image
+	- width: string, can be Npx or N%, but % values are recommended (optional; NOTE that if a grid value is set on the u-photo or its u-gallery, this value will be overriden)
+	- album: string, will include this image with others of this album in the lightbox (optional; defaults to "default")
+	- about: string, shows up as the image caption in lightbox (optional)
+	- grid: number, determines the image width by setting the number of columns it will occupy (optional)
+	- cushion: number, sets a padding on the right and left of the image (optional)
+	- label: boolean, this currently does absolutely nothing, in the future will show/hide lightbox label "image 1 of X"
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+	<u-photo class="group1" image="images/chicago01.jpg" album="testalbum" about="Addison" cushion="5" grid="6">
+	</u-photo>
+	<u-photo class="group1" image="images/chicago02.jpg" album="testalbum" about="Addison" cushion="5" grid="6">
+	</u-photo>
+	<u-photo class="group1" image="images/chicago03.jpg" album="testalbum" about="North/Clybourn" cushion="5" grid="6">
+	</u-photo>
+	<u-photo class="group1" image="images/chicago04.jpg" album="testalbum" about="Jackson" cushion="5" grid="6">
+	</u-photo>
+	<u-photo class="group1" image="images/chicago05.jpg" album="testalbum" about="North/Clybourn" cushion="5" grid="6">
+	</u-photo>
+	<u-photo class="group1" image="images/chicago06.jpg" album="testalbum" about="Addison" cushion="5" grid="6">
+	</u-photo>
+	<u-photo class="group2" image="images/chicago07.jpg" album="testalbum" about="Lake" cushion="5" grid="4">
+	</u-photo>
+	<u-photo class="group2" image="images/chicago08.jpg" album="testalbum" about="Grand" cushion="5" grid="4">
+	</u-photo>
+	<u-photo class="group2" image="images/chicago09.jpg" album="testalbum" about="North/Clybourn" cushion="5" grid="4">
+	</u-photo>
+	<u-photo class="group2" image="images/chicago10.jpg" album="testalbum" about="North/Clybourn" cushion="5" grid="4">
+	</u-photo>
+	<u-photo class="group3" id="hammerTest1" image="images/chicago11.jpg" album="testalbum" about="Train" cushion="5" grid="2">
+	</u-photo>
+	<u-photo class="group3" id="hammerTest2" image="images/chicago12.jpg" album="testalbum" about="North/Clybourn" cushion="5" grid="2">
+	</u-photo>
+
+<!--
+	<div class="theCode">
+	<h3>Code:</h3>
+	<p>&lt;body&gt;</p>
+			<p class="indent1">&lt;u-photo image="images/chicago01.jpg" album="testalbum" about="Addison" cushion="5" grid="6"&gt;
+			<br>&lt;/u-photo&gt;
+			<br>&lt;u-photo image="images/chicago02.jpg" album="testalbum" about="Addison" cushion="5" grid="6"&gt;
+			<br>&lt;/u-photo&gt;
+			<br>&lt;u-photo image="images/chicago03.jpg" album="testalbum" about="North/Clybourn" cushion="5" grid="6"&gt;
+			<br>&lt;/u-photo&gt;
+			<br>&lt;u-photo image="images/chicago04.jpg" album="testalbum" about="Jackson" cushion="5" grid="6"&gt;
+			<br>&lt;/u-photo&gt;
+			<br>&lt;u-photo image="images/chicago05.jpg" album="testalbum" about="North/Clybourn" cushion="5" grid="6"&gt;
+			<br>&lt;/u-photo&gt;
+			<br>&lt;u-photo image="images/chicago06.jpg" album="testalbum" about="Addison" cushion="5" grid="6"&gt;
+			<br>&lt;/u-photo&gt;
+			<br>&lt;u-photo image="images/chicago07.jpg" album="testalbum2" about="Lake" cushion="5" grid="4"&gt;
+			<br>&lt;/u-photo&gt;
+			<br>&lt;u-photo image="images/chicago08.jpg" album="testalbum2" about="Grand" cushion="5" grid="4"&gt;
+			<br>&lt;/u-photo&gt;
+			<br>&lt;u-photo image="images/chicago09.jpg" album="testalbum2" about="North/Clybourn" cushion="5" grid="4"&gt;
+			<br>&lt;/u-photo&gt;
+			<br>&lt;u-photo image="images/chicago10.jpg" album="testalbum2" about="North/Clybourn" cushion="5" grid="4"&gt;
+			<br>&lt;/u-photo&gt;
+			<br>&lt;u-photo image="images/chicago11.jpg" album="testalbum2" about="Train" cushion="5" grid="2"&gt;
+			<br>&lt;/u-photo&gt;
+			<br>&lt;u-photo image="images/chicago12.jpg" album="testalbum2" about="North/Clybourn" cushion="5" grid="2"&gt;
+			<br>&lt;/u-photo&gt;</p>
+	<p>&lt;/body&gt;</p>
+	</div> -->
+<!-- lightbox -->
+<script src="lightbox/js/lightbox.js"></script>
+<!-- my js -->
+<script src="js/script.js"></script></body>
+
 </html>
